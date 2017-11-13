@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <title>Login page</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Manjusha"/>
+    <meta name="description" content="login page for the website"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+<body class="login">
+    <div class="container">
+        <div class="title">
+           <img src="images/logo1.png" class="img-responsive"/>
+        
+        </div>
+       
+            <form class="form-spacing" id="loginform" action="index.html" method="get">
+                <div class="login-form">    
+               <input type="text" id="cmp-name"   placeholder="Company ID"/>
+                        <br/>
+                        <br/>
+                        
+                        <input type="email" id="emailid"  placeholder="Email-id"/>
+                        <br/>
+                        <br/>
+                        
+                        <input type="password" id="passwd"  placeholder="Password"/>
+                        
+                      
+                    <br/>
+                <br/>
+                    
+                     <button type="submit" class="btn btn-lbl grn-bg"  onclick="validate();">Login</button>
+                     <button type="reset" class="btn btn-lbl grn-bg">Reset</button>
+                     <br/>
+                     <br/>
+                
+                </div>
+                    
+             </form>
+        <p style="margin-left:35%">Don't have an account?<a href="signup.html">Sign up</a></p>
+        <p style="margin-left:35%">Need assistance <a href="#">support@leavetracker.com</a></p>
+                         
+              
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+
+<script type="text/javascript">
+         
+    function validate(){
+        
+        var cmp = document.forms("loginform").elements[0].value();
+        alert(cmp);
+        
+        var fname = document.getElementById("emailid").value;
+        if( cmp == "pgdbb"){
+           if( fname == "chitra@gmail.com") 
+            {  var win = window.open('', "pop-up", 'width=320,height=240,left=300,top=200');
+        win.document.open();
+        win.document.write("Your login sucessful");
+        win.document.close();
+        }
+               else{
+                   alert("login failed");
+               }
+           }
+        else{
+            alert("login failed");
+        }
+      
+    
+    
+    
+    
+    }//end of function...
+    </script>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>

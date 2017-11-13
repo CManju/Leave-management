@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+    <title>My Calendar</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" aria-expanded="false" data-toggle="collapse" data-target="#bs-example-1">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                
+                </button>
+            <a class="navbar-brand"href="index.html"><img src="images/logo1.png" class="img-responsive" style="margin-top: -5px"/></a>
+            
+            </div><!-- end of navbar-header-->
+        
+            <div class="collapse navbar-collapse" id="bs-example-1">
+            <ul class="nav navbar-nav">
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="hr.html">HR</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Approval<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="balance.html">Leave balance</a></li>
+                       <li><a href="request.html">Leave Requests</a></li>
+                    <li><a href="delegates.html">Delegates</a></li>
+                    <li><a href="comp-off.html">Comp-off Requests</a></li>
+                   
+            </ul>
+                </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Requests<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="leavereq.html">Request a leave</a></li>
+                       <li><a href="compreq.html">Request a Comp-off</a></li>
+                    <li><a href="leavelist.html">List of Leave requests</a></li>
+                   
+            </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calendars<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mycalendar.html">My Calendar</a></li>
+                       <li><a href="#">My Workmates</a></li>
+                    <li><a href="#">My sub-ordinates</a></li>
+                    
+                   
+            </ul>
+                </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="profile.html"><span class="glyphicon glyphicon-user" data-toggle="tool-tip" data-placement="bottom " title="logged in as Manjusha"></span></a></li>
+                <li><a href="signout.html"><span class="glyphicon glyphicon-off" data-toggle="tool-tip" data-placement="bottom" title="Sign-out"></span></a></li>
+                
+                </ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+            </div><!--end of navbar-collapse-->
+        
+        
+        
+        
+        </div><!--end of Container-->
+        
+    </nav>
+    
+    <main>
+    <div class="container">
+        <br/>  <br/>  <br/>  <br/>
+        <h2>My Calendar</h2>
+        <br/>
+
+        <p class="p-custom grn-bg">Approved</p>
+        <p class="p-custom blu-bg">Pending</p>
+        <p class="p-custom pnk-bg">Rejected</p>
+        <br/><br/><br/>
+        <div class="month">
+            <ul>
+            
+                <li class="prev">&#10094;</li>
+                <li class="next">&#10095;</li>
+                <li>June <span style="font-size:18px">2017</span></li>
+            
+            </ul>
+        
+        
+        </div>
+        <ul class="weekdays">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tues</li>
+            <li>Wed</li>
+            <li>Thur</li>
+            <li>Fri</li>
+            <li>Sat</li>
+        </ul>
+        
+        <ul class="days">
+            <li></li>
+            <li></li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            
+            
+        
+        
+        </ul>
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div> 
+        
+        <br/>
+        <br/>
+        <br/>
+        
+    
+    
+    </main>
+    
+    <div class="clear"></div>
+    <footer>
+        <div class="container">
+        Logged in for past 10 mins.         
+            
+            Manjusha Chitra.
+            
+            
+        </div>
+    
+    
+    
+    
+    </footer>
+    
+    </body>
+    
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( ".datepicker" ).datepicker();
+  } );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

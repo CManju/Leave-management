@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+    <title>Request a Leave--form</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" aria-expanded="false" data-toggle="collapse" data-target="#bs-example-1">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                
+                </button>
+            <a class="navbar-brand" href="index.html">Leave Management System</a>
+            
+            </div><!-- end of navbar-header-->
+        
+            <div class="collapse navbar-collapse" id="bs-example-1">
+            <ul class="nav navbar-nav">
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="hr.html">HR</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Approval<span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="padding: 5px 0 0 0">
+                        <li><a href="balance.html">Leave balance</a></li>
+                       <li><a href="request.html">Leave Requests</a></li>
+                    <li><a href="delegates.html">Delegates</a></li>
+                    <li><a href="comp-off.html">Comp-off Requests</a></li>
+                   
+            </ul>
+                </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Requests<span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="padding: 5px 0 0 0">
+                        <li><a href="leavereq.html">Request a leave</a></li>
+                       <li><a href="compreq.html">Request a Comp-off</a></li>
+                    <li><a href="leavelist.html">List of Leave requests</a></li>
+                   
+            </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calendars<span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="padding: 5px 0 0 0">
+                        <li><a href="mycalendar.html">My Calendar</a></li>
+                       <li><a href="#">My Workmates</a></li>
+                    <li><a href="#">My sub-ordinates</a></li>
+                    
+                   
+            </ul>
+                </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="profile.html"><span class="glyphicon glyphicon-user" data-toggle="tool-tip" data-placement="bottom " title="logged in as Manjusha"></span></a></li>
+                <li><a href="signout.html"><span class="glyphicon glyphicon-off" data-toggle="tool-tip" data-placement="bottom" title="Sign-out"></span></a></li>
+                
+                </ul>
+                
+         
+            
+            </div><!--end of navbar-collapse-->
+        
+        
+        
+        
+        </div><!--end of Container-->
+        
+    </nav>
+    <div class="clear"></div>
+    <main>
+    <div class="container">
+        
+    <h2 class="heading">Comp-off Request Form</h2>
+    <form class="lv-custom">
+        
+        <label>Employee Id: <input type="text" class=""id="empid" align="right" style="margin-left:50px"/></label><br/><br/>
+        <label>Employee name: <input type="text" class=""id="empname" style="margin-left: 20px"/></label><br/>
+        <label>Type of Leave:<select style="margin-left:41px;font-weight:400" id="leave-type">
+            <option>Sick-leave</option>
+            <option>Maternity leave</option>
+            <option>Comp-off</option>
+            <option>Disability leave</option>
+            <option>Unpaid leave</option>
+            <option>Vacation</option>
+            </select></label><br/><br/><br/>
+        
+        <label>Start Date <input type="text" class="datepicker" id="sdate" style="margin-left: 70px"/></label><br/>
+        <label>End Date <input type="text" class="datepicker" id="eod"         style="margin-left: 80px"/></label><br/><br/>
+        <label><select style="margin-left:160px;font-weight:400" id="day-option" >
+            <option>Half-day</option>
+            <option>Full-day</option>
+            
+            </select></label><br/><br/><br/>
+        
+        
+
+        
+        <label>Reason:<textarea rows="3" cols="30" style="margin-left: 90px"></textarea></label><br/><br/>
+        <button class="btn btn-primary btn-custom1">Apply</button>
+        <button class="btn btn-primary btn-custom1">Clear</button>
+        </form>
+        </div> 
+        
+    <br/>
+    <br/>    
+        
+    
+    
+    </main>
+    
+    <footer>
+        <div class="container">
+        Logged in for past 10 mins.         
+            
+            John Doe
+            
+            
+        </div>
+    
+    
+    
+    
+    </footer>
+    
+    
+    </body>
+    
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( ".datepicker" ).datepicker();
+  } );
+  </script>
+
+
+</html>

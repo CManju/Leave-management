@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+    <title>Leave requests</title>
+    <meta charset="utf-8"/>
+     <meta name="viewport" content="width=device-width" initial-scale="1"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+    
+    </head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" aria-expanded="false" data-toggle="collapse" data-target="#bs-example-1">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                
+                </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo1.png" class="img-responsive" style="margin-top: -5px"/></a>
+            
+            </div><!-- end of navbar-header-->
+        
+            <div class="collapse navbar-collapse" id="bs-example-1">
+            <ul class="nav navbar-nav">
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="hr.html">HR</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Approval<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="balance.html">Leave balance</a></li>
+                       <li><a href="request.html">Leave Requests</a></li>
+                    <li><a href="delegates.html">Delegates</a></li>
+                    <li><a href="comp-off.html">Comp-off Requests</a></li>
+                   
+            </ul>
+                </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Requests<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="leavereq.html">Request a leave</a></li>
+                       <li><a href="compreq.html">Request a Comp-off</a></li>
+                    <li><a href="leavelist.html">List of Leave requests</a></li>
+                   
+            </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calendars<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mycalendar.html">My Calendar</a></li>
+                       <li><a href="#">My Workmates</a></li>
+                    <li><a href="#">My sub-ordinates</a></li>
+                    
+                   
+            </ul>
+                </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="profile.html"><span class="glyphicon glyphicon-user" data-toggle="tool-tip" data-placement="bottom " title="logged in as John Doe"></span></a></li>
+                <li><a href="signout.html"><span class="glyphicon glyphicon-off" data-toggle="tool-tip" data-placement="bottom" title="Sign-out"></span></a></li>
+                
+                </ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+            </div><!--end of navbar-collapse-->
+        
+        
+        
+        
+        </div><!--end of Container-->
+        
+    </nav>
+    
+    <main>
+    <br/>
+        
+    <div class="container">
+          <br/>  <br/>  <br/>
+        <h2>Welcome John Doe</h2>
+        <br/>
+        <br/>
+        <p id="demo"> </p>
+        <br/>
+        <p>This page shows list of leave requests submitted to you.If you are not a manager then the rows below will be empty.</p>  
+        <br/><br/>
+        Show <input type="number" value="5"/> entries.
+        <br/>
+        <br/>
+        <table class="table table-bordered table-responsive">
+            <thead>
+            <tr>
+                <th>Emp id #</th>
+                <th>Emp name</th>
+                <th> Role</th>
+                <th>Manager</th>
+                <th>Project</th>
+                <th>Start date</th>
+                <th>End date</th>
+                <th>Reason</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Emp id</td>
+                <td>Emp name</td>
+                <td> Role</td>
+                <td>Manager</td>
+                <td>Project</td>
+                <td>Start date</td>
+                <td>End date</td>
+                <td>Reason</td>
+                <td><button class="btn-custom1" onclick="alert('Approved');">Approve</button><button class="btn-custom pnk-bg" onClick="alert('Rejected');">Reject</button></td>
+            </tr>
+            <tr>
+                <td>Emp id</td>
+                <td>Emp name</td>
+                <td> Role</td>
+                <td>Manager</td>
+                <td>Project</td>
+                <td>Start date</td>
+                <td>End date</td>
+                <td>Reason</td>
+                <td><button class="btn-custom1" onclick="alert('Approved');">Approve</button><button class="btn-custom pnk-bg" onClick="alert('Rejected');">Reject</button></td>
+            </tr>
+            <tr>
+                <td>Emp id</td>
+                <td>Emp name</td>
+                <td> Role</td>
+                <td>Manager</td>
+                <td>Project</td>
+                <td>Start date</td>
+                <td>End date</td>
+                <td>Reason</td>
+                <td><button class="btn-custom1" onclick="alert('Approved');">Approve</button><button class="btn-custom pnk-bg" onClick="alert('Rejected');">Reject</button></td>
+            </tr>
+            <tr>
+                <td>Emp id</td>
+                <td>Emp name</td>
+                <td> Role</td>
+                <td>Manager</td>
+                <td>Project</td>
+                <td>Start date</td>
+                <td>End date</td>
+                <td>Reason</td>
+                <td><button class="btn-custom1" onclick="alert('Approved');">Approve</button><button class="btn-custom pnk-bg" onClick="alert('Rejected');">Reject</button></td>
+            </tr>
+            
+            </tbody>
+        
+        
+        
+        </table>
+        Showing 5 entries per page
+        <br/><br/><br/>
+        <button class="btn btn-primary">Export to Excel</button>
+        <button class="btn btn-primary"><a href="leavereq.html">New Leave Request</a></button><br/>
+        
+        <nav aria-label="Page navigation" class="navbar-right">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="leavelist.html">1</a></li>
+    <li><a href="#">2</a></li>
+    <!--<li><a href="#">3</a></li>
+   <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>-->
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            
+        
+        </div>
+    
+    <br/>
+        <br/>
+        <br/>
+    </main>
+    <div class="clear"></div>
+    <footer>
+        <div class="container">
+        Logged in for past 10 mins.         
+            
+            Manjusha Chitra.
+            
+            
+        </div>
+    
+    
+    
+    
+    </footer>
+    
+    </body>
+
+<script>
+    
+    var d = new Date();
+    var strDate = "Today is   " + ( d.getMonth() + 1 ) + "/" + ( d.getDate() ) + "/" + ( d.getFullYear() );
+     document.getElementById("demo").innerHTML = strDate;
+    
+    
+    
+    
+    </script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
